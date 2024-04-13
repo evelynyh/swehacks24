@@ -73,11 +73,6 @@ planetaryjs.plugins.objects = function (config) {
             context.globalAlpha = 1
             //If fade is true fade out and in
 
-
-
-
-
-
         }
 
 
