@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <link href="places.css" rel="stylesheet" />
+        <script src="scripts/places.js"></script>
+        <title>Places</title>
+        <link rel="icon" type="image/x-icon" href="images/icon.png" >
+    </head>
 
-    <link href="places.css" rel="stylesheet" />
-    <link href="images/icon.png" rel="icon" type="image/x-icon" />
+    <body>
+       <header>Places in France</header>
+       <main>
+           <div class="slideshow-container">
+               <div class="slide">
+                   <img src="images/eiffel.png" alt="1" onclick="">
+               </div>
 
+               <div class="slide">
+                   <img src="images/louvre.png" alt="2">
+               </div>
 
-    <title>
-        About Me
-    </title>
-</head>
-<body>
+               <div class="slide">
+                   <img src="images/notreDame.png" alt="3">
+               </div>
 
-<div class="slide">
-    <p>Your Content Here</p>
-</div>
+               <div class="slide">
+                   <img src="images/versailles.jpg" alt="4">
+               </div>
 
-</body>
+               <div class="slide">
+                   <img src="images/rocamadour.jpg" alt="5">
+               </div>
+
+               <div class="slide">
+                   <img src="images/saintMichel.jpg" alt="6">
+               </div>
+
+               <span>
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+               </span>
+           </div>
+           <h1>
+            Explore all of these places in France!
+           </h1>
+           <h3>
+            Click on the place you want to learn more about
+           </h3>
+
+           <script>
+            setInterval(function() { nextSlide(); }, 5000);
+          </script>
+       </main>
+    </body>
 </html>
