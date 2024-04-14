@@ -175,7 +175,6 @@
        
         globe.projection.rotate([event.pageX, event.pageY, 0]);
         
-
     });
  
 
