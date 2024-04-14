@@ -68,7 +68,7 @@
             });
 
         //french
-        var french_flag = globe.plugins.objects.add(2.35, 48.85, {
+         globe.plugins.objects.add(2.35, 48.85, {
             imagesrc: "images/Flag-France.webp",
             imageheight: 26,
             imagewidth: 40
@@ -83,15 +83,19 @@
             imageheight: 26,
             imagewidth: 40
         })
-        french_flag.element.addEventListener('click', function() {
-            // Redirect to another webpage
-            window.location.href = 'Places.html';
-        });
 
             flagsLoaded = 1;
         }
 
     }, 150);
+
+    document.addEventListener('click', function(event) {
+        var frenchFlag = document.querySelector('img[src="images/Flag-France.webp"]');
+        console.log("French flag clicked");
+        window.location.href = 'Places.html';
+        
+    });
+    
     
 
     var canvas = document.getElementById('cheemaglobe');
