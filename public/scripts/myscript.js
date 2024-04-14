@@ -96,7 +96,6 @@
         
     });
     
-    
 
     var canvas = document.getElementById('cheemaglobe');
     // Special code to handle high-density displays (e.g. retina, some phones)
