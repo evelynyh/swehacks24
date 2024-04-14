@@ -68,7 +68,7 @@
             });
 
         //french
-        globe.plugins.objects.add(2.35, 48.85, {
+         globe.plugins.objects.add(2.35, 48.85, {
             imagesrc: "images/Flag-France.webp",
             imageheight: 26,
             imagewidth: 40
@@ -89,6 +89,13 @@
 
     }, 150);
 
+    document.addEventListener('click', function(event) {
+        var frenchFlag = document.querySelector('img[src="images/Flag-France.webp"]');
+        console.log("French flag clicked");
+        window.location.href = 'Places.html';
+        
+    });
+    
     
 
     var canvas = document.getElementById('cheemaglobe');
@@ -102,7 +109,7 @@
     }
 
     // Size of globe and translate to center
-    globe.projection.scale(150).translate([330, 290]);
+    globe.projection.scale(120).translate([330, 250]);
     // Draw that globe!
     globe.draw(canvas);
 
