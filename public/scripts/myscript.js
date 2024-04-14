@@ -92,7 +92,7 @@
     document.addEventListener('click', function(event) {
         var frenchFlag = document.querySelector('img[src="images/Flag-France.webp"]');
         console.log("French flag clicked");
-        window.location.href = 'Places.html';
+        window.location.href = 'Frontpage.html';
         
     });
     
